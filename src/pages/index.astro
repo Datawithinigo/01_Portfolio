@@ -1,0 +1,212 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+---
+
+<Layout title="Iñigo Arriazu - Software Developer">
+	<main>
+		<div class="container hero">
+			<div class="content">
+				<h1>Iñigo Arriazu<br><span>Software Developer</span></h1>
+				<p>Custom application development, ongoing support, and consulting</p>
+				<div class="social-links">
+					<a href="https://www.linkedin.com/in/inigo-arriazu-garcia" aria-label="LinkedIn"><img src="/linkedin-icon.svg" alt="LinkedIn" /></a>
+					<a href="https://www.instagram.com/iarriazu/" aria-label="Instagram"><img src="/instagram-icon.svg" alt="Instagram" /></a>
+					<a href="https://www.youtube.com/@I%C3%B1igoArriazu" aria-label="YouTube"><img src="/youtube-icon.svg" alt="YouTube" /></a>
+				</div>
+				<button class="cta-button">Get in Touch</button>
+			</div>
+			<div class="image-container" style="border: black;">
+				<img src="/developer_photo.png" alt="Iñigo Arriazu" style="border: white;" />
+			
+			</div>
+		</div>
+
+		<div class="container work-process">
+			<div class="image-container_2 ">
+				<img src="/ordenador.jpg" alt="Espacio de trabajo" />
+			</div>
+
+			<div class="content">
+				<h2>How I Work</h2>
+				<p>My approach is based on close collaboration and personalized attention. Each project is unique, and I make sure to fully understand my clients' needs to offer tailored solutions that exceed their expectations.</p>
+				<p>From conceptualization to implementation, I maintain constant communication, adapting to changes and ensuring high-quality results at every stage of the process.</p>
+				<button class="cta-button">Contact Me</button>
+			</div>
+		</div>
+
+		<div class="container services">
+			<h2>My Services</h2>
+			<div class="service-cards">
+				<div class="service-card">
+					<img src="/icons/WEB_ICON.png" alt="Web & App Development" class="service-icon" />
+					<h3>Web & App Development</h3>
+					<p>Development of custom web and mobile applications, using the latest technologies to create scalable and high-performance solutions that drive your business forward.</p>					
+				</div>
+				<div class="service-card">
+					<img src="/icons/E_COMERCE_ICON.png" alt="E-Commerce, Shopify" class="service-icon" />
+					<h3>E-Commerce, Shopify</h3>
+					<p>Creation and optimization of online stores with Shopify, designed to maximize conversions and provide an exceptional shopping experience for your customers.</p>					
+				</div>
+				<div class="service-card">
+					<img src="/icons/AI_DEV_ICON.png" alt="AI Development" class="service-icon" />
+					<!-- <img src="/ai-dev-icon.svg" alt="AI Development" class="service-icon" /> -->
+					<h3>AI Development</h3>
+					<p>Implementation of artificial intelligence and machine learning solutions to automate processes, gain valuable insights, and improve decision-making in your company.</p>
+				</div>
+			</div>
+		</div>
+
+
+ 
+</Layout>
+
+<style>
+	main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 2rem;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
+		width: 100%;
+		margin-bottom: 4rem;
+	}
+	.hero {
+		min-height: 100vh;
+		flex-direction: row;
+		align-items: center;
+	}
+	.work-process {
+		flex-direction: row;
+		align-items: center;
+	}
+	.content {
+		flex: 1;
+		padding-right: 2rem;
+	}
+	h1, h2 {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+		color: var(--navy);
+	}
+	h1 span {
+		font-weight: 300;
+	}
+	p {
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+		color: var(--navy);
+	}
+	.social-links {
+		display: flex;
+		gap: 1rem;
+		margin-bottom: 2rem;
+	}
+	.social-links img {
+		width: 24px;
+		height: 24px;
+	}
+	.cta-button {
+		background-color: var(--light-red);
+		color: var(--white);
+		border: none;
+		padding: 0.8rem 1.5rem;
+		font-size: 1rem;
+		font-weight: 700;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+	}
+	.cta-button:hover {
+		background-color: #FF4F4F;
+	}
+	/*  */
+	.image-container {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.image-container img {
+		max-width: 120%;
+		height: auto;
+		border-radius: 10px;
+		/* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+	}
+
+	/*  IMAGE CONTAINER 2 */
+	.image-container_2 {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.image-container_2  img {
+		max-width: 70%;
+		height: auto;
+		border-radius: 10px;
+		/* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+	}
+	/*  */
+	.services h2 {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+	.service-cards {
+		display: flex;
+		justify-content: space-between;
+		gap: 2rem;
+	}
+	.service-card {
+		flex: 1;
+		background-color: #f8f8f8;
+		border-radius: 10px;
+		padding: 2rem;
+		text-align: center;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease;
+	}
+	.service-card:hover {
+		transform: translateY(-5px);
+	}
+	.service-icon {
+
+		width: 64px;
+		height: 64px;
+		margin-bottom: 1rem;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.service-card h3 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+		color: var(--navy);
+	}
+	.service-card p {
+		font-size: 1rem;
+		color: #333;
+	}
+	@media (max-width: 768px) {
+		.hero, .work-process {
+			flex-direction: column-reverse;
+		}
+		.content {
+			padding-right: 0;
+			text-align: center;
+		}
+		.social-links {
+			justify-content: center;
+		}
+		.image-container {
+			margin-bottom: 2rem;
+		}
+		.service-cards {
+			flex-direction: column;
+		}
+	}
+</style>
