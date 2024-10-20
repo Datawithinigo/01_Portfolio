@@ -49,6 +49,11 @@ https://vercel.com/docs/concepts/deployments/overview
 
 
 
+comandos utiles: 
+
+pnpm run build
+
+
 
 
 
