@@ -38,3 +38,17 @@ Comentarios utiles para entender astro:
 ASTRO:
 + Dependencies:
   * VITE: https://vitejs.dev/guide/features.html
+
+
+
+DIA 2:
+deployment en vercel
+https://vercel.com/docs/concepts/deployments/overview
+
+
+
+
+
+
+
+
