@@ -1,0 +1,117 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ServiceLayout from '../../components/ServiceLayout.astro';
+import '../../styles/global.css';
+---
+
+<Layout title="E-Commerce, Shopify">
+	<ServiceLayout 
+		title="E-Commerce, Shopify"
+		description="Building high-converting online stores with custom Shopify solutions that deliver exceptional shopping experiences."
+		icon="/icons/E_COMERCE_ICON.png"
+	>
+		<div class="content-grid">
+			<section class="overview">
+				<h2>Transform Your Online Business</h2>
+				<p>
+					We specialize in creating customized Shopify solutions that help businesses 
+					scale their online presence. Our e-commerce expertise ensures your store 
+					not only looks professional but also converts visitors into loyal customers.
+				</p>
+			</section>
+
+			<section class="features">
+				<h2>Our Solutions</h2>
+				<div class="feature-grid">
+					<div class="feature">
+						<h3>Custom Theme Development</h3>
+						<p>Unique, branded designs that reflect your business identity and enhance user experience.</p>
+					</div>
+					<div class="feature">
+						<h3>E-commerce Strategy</h3>
+						<p>Comprehensive planning for launches, migrations, and scaling your online store.</p>
+					</div>
+					<div class="feature">
+						<h3>Payment Integration</h3>
+						<p>Secure payment gateways and multiple payment method implementations.</p>
+					</div>
+					<div class="feature">
+						<h3>Performance Optimization</h3>
+						<p>Speed optimization and conversion rate improvements for better results.</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="benefits">
+				<h2>Why Choose Our Shopify Services?</h2>
+				<ul class="benefits-list">
+					<li>Increased Conversion Rates</li>
+					<li>Mobile-First Design</li>
+					<li>SEO Optimization</li>
+					<li>Analytics Integration</li>
+					<li>Ongoing Support</li>
+					<li>Performance Monitoring</li>
+				</ul>
+			</section>
+		</div>
+
+		<section class="process2">
+			<h2>If you need more information:</h2>
+			<a href="/project_2/contact" class="cta-button"> 
+				Get in Touch
+			</a>
+			<div class="back-link">
+				<a href="/">← Return to main page </a>
+			</div>
+		</section>
+		
+	</ServiceLayout>
+
+
+
+
+</Layout>
+
+<style>
+	.content-grid {
+		display: grid;
+		gap: 3rem;
+	}
+	h2 {
+		color: rgb(var(--accent));
+		font-size: 1.8rem;
+		margin-bottom: 1rem;
+	}
+	h3 {
+		color: rgb(var(--text));
+		font-size: 1.3rem;
+		margin-bottom: 0.5rem;
+	}
+	.feature-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		margin-top: 1.5rem;
+	}
+	.feature {
+		background: rgb(var(--background));
+		padding: 1.5rem;
+		border-radius: 12px;
+	}
+	.benefits-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 1rem;
+		list-style: none;
+		padding: 0;
+	}
+	.benefits-list li {
+		background: rgb(var(--accent), 0.1);
+		color: rgb(var(--accent));
+		padding: 1rem;
+		border-radius: 12px;
+		text-align: center;
+		font-weight: 500;
+	}
+
+</style>

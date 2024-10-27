@@ -1,0 +1,112 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ServiceLayout from '../../components/ServiceLayout.astro';
+---
+
+<Layout title="Web & App Development">
+	<ServiceLayout 
+		title="Web & App Development"
+		description="Creating powerful, scalable, and user-friendly applications that drive business growth and enhance user experience."
+		icon="/icons/WEB_ICON.png"
+	>
+		<div class="content-grid">
+			<section class="overview">
+				<h2>What We Offer</h2>
+				<p>
+					Our web and app development services combine cutting-edge technology with 
+					user-centered design to create solutions that not only look great but 
+					deliver real business value. We focus on scalability, performance, and 
+					maintainability to ensure your application stands the test of time.
+				</p>
+			</section>
+
+			<section class="features">
+				<h2>Our Expertise</h2>
+				<div class="feature-grid">
+					<div class="feature">
+						<h3>Custom Web Applications</h3>
+						<p>Tailored solutions that perfectly match your business needs and workflows.</p>
+					</div>
+					<div class="feature">
+						<h3>Mobile App Development</h3>
+						<p>Native and cross-platform mobile applications for iOS and Android.</p>
+					</div>
+					<div class="feature">
+						<h3>Progressive Web Apps</h3>
+						<p>Modern web apps that work offline and feel like native applications.</p>
+					</div>
+					<div class="feature">
+						<h3>Full-Stack Development</h3>
+						<p>End-to-end solutions covering both frontend and backend development.</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="technologies">
+				<h2>Technologies We Use</h2>
+				<ul class="tech-list">
+					<li>React & Next.js</li>
+					<li>Vue & Nuxt</li>
+					<li>Node.js</li>
+					<li>TypeScript</li>
+					<li>Python</li>
+					<li>React Native</li>
+				</ul>
+			</section>
+		</div>
+
+		<section class="process2">
+			<h2>If you need more information:</h2>
+			<a href="/project_2/contact" class="cta-button"> 
+				Get in Touch
+			</a>
+			<div class="back-link">
+				<a href="/">← Return to main page </a>
+			</div>
+		</section>
+	
+	</ServiceLayout>
+
+</Layout>
+
+<style>
+	.content-grid {
+		display: grid;
+		gap: 3rem;
+	}
+	h2 {
+		color: rgb(var(--accent));
+		font-size: 1.8rem;
+		margin-bottom: 1rem;
+	}
+	h3 {
+		color: rgb(var(--text));
+		font-size: 1.3rem;
+		margin-bottom: 0.5rem;
+	}
+	.feature-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		margin-top: 1.5rem;
+	}
+	.feature {
+		background: rgb(var(--background));
+		padding: 1.5rem;
+		border-radius: 12px;
+	}
+	.tech-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		list-style: none;
+		padding: 0;
+	}
+	.tech-list li {
+		background: rgb(var(--accent), 0.1);
+		color: rgb(var(--accent));
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		font-weight: 500;
+	}
+</style>

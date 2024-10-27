@@ -76,3 +76,8 @@ To create new project:
 * npm install -g astro
 
 
+Before pull to the main : 
+pnpm install
+
+
+

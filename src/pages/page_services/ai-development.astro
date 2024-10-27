@@ -1,0 +1,180 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ServiceLayout from '../../components/ServiceLayout.astro';
+import '../../styles/global.css';
+---
+
+<Layout title="AI Development">
+	<ServiceLayout 
+		title="AI Development"
+		description="Leveraging artificial intelligence to transform your business with smart, data-driven solutions."
+		icon="/icons/AI_DEV_ICON.png"
+	>
+		<div class="content-grid">
+			<section class="overview">
+				<h2>Innovate with AI</h2>
+				<p>
+					Our AI development services help businesses harness the power of artificial 
+					intelligence and machine learning to automate processes, gain valuable insights, 
+					and make better decisions. We focus on practical, results-driven AI solutions 
+					that deliver measurable business value.
+				</p>
+			</section>
+
+			<section class="features">
+				<h2>Our Capabilities</h2>
+				<div class="feature-grid">
+					<div class="feature">
+						<h3>Machine Learning Models</h3>
+						<p>Custom ML solutions for prediction, classification, and pattern recognition.</p>
+					</div>
+					<div class="feature">
+						<h3>Natural Language Processing</h3>
+						<p>Text analysis, chatbots, and language understanding systems.</p>
+					</div>
+					<div class="feature">
+						<h3>Computer Vision</h3>
+						<p>Image recognition, object detection, and visual data analysis.</p>
+					</div>
+					<div class="feature">
+						<h3>Predictive Analytics</h3>
+						<p>Data-driven forecasting and business intelligence solutions.</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="process">
+				<h2>Our AI Development Process</h2>
+				<div class="process-steps">
+					<div class="step">
+						<span class="step-number">1</span>
+						<h3>Data Assessment</h3>
+						<p>Evaluate your data quality and requirements</p>
+					</div>
+					<div class="step">
+						<span class="step-number">2</span>
+						<h3>Solution Design</h3>
+						<p>Create custom AI model architecture</p>
+					</div>
+					<div class="step">
+						<span class="step-number">3</span>
+						<h3>Development</h3>
+						<p>Build and train AI models</p>
+					</div>
+					<div class="step">
+						<span class="step-number">4</span>
+						<h3>Integration</h3>
+						<p>Deploy and integrate with your systems</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="process2">
+				<h2>If you need more information:</h2>
+				<a href="/project_2/contact" class="cta-button"> 
+					Get in Touch
+				</a>
+				<div class="back-link">
+					<a href="/">← Return to main page </a>
+				</div>
+			</section>
+ 
+		</div>
+	</ServiceLayout>
+
+
+
+
+
+</Layout>
+
+<style>
+	.content-grid {
+		display: grid;
+		gap: 3rem;
+	}
+	h2 {
+		color: rgb(var(--accent));
+		font-size: 1.8rem;
+		margin-bottom: 1rem;
+	}
+	h3 {
+		color: rgb(var(--text));
+		font-size: 1.3rem;
+		margin-bottom: 0.5rem;
+	}
+	.feature-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		margin-top: 1.5rem;
+	}
+	.feature {
+		background: rgb(var(--background));
+		padding: 1.5rem;
+		border-radius: 12px;
+	}
+	.process-steps {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 2rem;
+		margin-top: 1.5rem;
+	}
+	.step {
+		text-align: center;
+		padding: 1.5rem;
+		background: rgb(var(--background));
+		border-radius: 12px;
+		position: relative;
+	}
+	.step-number {
+		background: rgb(var(--accent));
+		color: white;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto 1rem;
+		font-weight: bold;
+	}	.contact-links-end {
+		text-align: center;
+		margin-top: 3rem;
+		padding-top: 3rem;
+		border-top: 1px solid rgba(var(--text), 0.1);
+	}
+	.cta-button {
+		display: inline-block;
+		background: rgb(var(--accent));
+		color: white;
+		padding: 1rem 2rem;
+		border-radius: 30px;
+		text-decoration: none;
+		font-weight: 500;
+		transition: background-color 0.2s ease-in-out;
+	}
+	.cta-button:hover {
+		background: rgb(var(--accent-light));
+	}
+	.back-link {
+		margin-top: 1.5rem;
+	}
+	.back-link a {
+		color: rgb(var(--text), 0.7);
+		text-decoration: none;
+		font-size: 0.9rem;
+		transition: color 0.2s ease-in-out;
+	}
+	.back-link a:hover {
+		color: rgb(var(--accent));
+	}
+	
+	.process2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	}
+</style>

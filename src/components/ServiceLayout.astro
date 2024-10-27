@@ -1,0 +1,76 @@
+---
+interface Props {
+	title: string;
+	description: string;
+	icon: string;
+}
+
+const { title, description, icon } = Astro.props;
+---
+
+<main>
+	<div class="service-header">
+		<h1>{title}</h1>
+		<p class="subtitle">{description}</p>
+	</div>
+	<div class="service-content">
+		<div class="icon-container">
+			<img src={icon} alt={`${title} Icon`} class="service-icon" />
+		</div>
+		<slot />
+	</div>
+</main>
+
+<style>
+	main {
+		margin: auto;
+		padding: 2rem;
+		width: 1200px;
+		max-width: calc(100% - 2rem);
+		color: rgb(var(--text));
+	}
+	.service-header {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: 1.2;
+		background-image: linear-gradient(45deg, rgb(var(--accent)), rgb(var(--accent-light)));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		margin-bottom: 1rem;
+	}
+	.subtitle {
+		font-size: 1.25rem;
+		color: rgb(var(--text), 0.8);
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	.service-content {
+		background: white;
+		padding: 3rem;
+		border-radius: 20px;
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+	}
+	.icon-container {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+	.service-icon {
+		width: 120px;
+		height: 120px;
+		padding: 1.5rem;
+		border-radius: 50%;
+		background: rgb(var(--background));
+	}
+	@media (max-width: 768px) {
+		h1 {
+			font-size: 2.5rem;
+		}
+		.service-content {
+			padding: 2rem;
+		}
+	}
+</style>

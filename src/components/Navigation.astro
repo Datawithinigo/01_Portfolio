@@ -1,9 +1,10 @@
 ---
 const menuItems = [
   { title: 'Home', path: '/' },
-  { title: 'About', path: '/about' },
-  { title: 'Projects', path: '/projects' },
-  { title: 'Contact', path: '/contact' }
+  { title: 'AI Development', path: '/page_services/ai-development' },
+  { title: 'Ecomerce', path: '/page_services/ecommerce-shopify' },
+  { title: 'Web App Development', path: '/page_services/web-app-development' },
+  { title: 'Contact', path: '/project_2/contact' }
 ];
 ---
 
@@ -39,8 +40,8 @@ const menuItems = [
   }
 
   .dropdown-button {
-    background: var(--light-red);
-    color: var(--white);
+    background: rgba(var(--accent-dark), 0.8);
+    color: var(--button_text);
     padding: 0.8rem 1.2rem;
     border: 1px solid rgba(var(--accent-light), 0.2);
     border-radius: 8px;
@@ -50,7 +51,7 @@ const menuItems = [
     gap: 0.5rem;
     font-size: 1rem;
     backdrop-filter: blur(10px);
-    transition: all 1s ease;
+    transition: all 0.2s ease;
   }
 
   .dropdown-button:hover {
@@ -68,15 +69,10 @@ const menuItems = [
     padding: 0.5rem;
     margin-top: 0.5rem;
     backdrop-filter: blur(10px);
-
-    
   }
 
   .dropdown:hover .dropdown-content {
     display: block;
-        opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto; /* Enable clicks when visible */
   }
 
   .dropdown-content li {
@@ -84,12 +80,12 @@ const menuItems = [
   }
 
   .dropdown-content a {
-    color: var(--white);
+    color: var(--button_text);
     padding: 0.8rem 1rem;
     text-decoration: none;
     display: block;
     border-radius: 4px;
-    transition: all 0.4s ease;
+    transition: all 0.2s ease;
   }
 
   .dropdown-content a:hover {
