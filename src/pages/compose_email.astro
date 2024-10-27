@@ -1,0 +1,68 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Gmail Composer">
+	<main>
+		<div class="container">
+			<a href="https://mail.google.com/mail/?view=cm&fs=1" target="_blank" rel="noopener noreferrer" class="gmail-button">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="gmail-icon">
+					<path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
+				</svg>
+				Compose Email
+			</a>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		min-height: 100vh;
+		display: grid;
+		place-items: center;
+		background: linear-gradient(to bottom right, #f3f4f6, #e5e7eb);
+	}
+
+	.container {
+		padding: 2rem;
+		text-align: center;
+	}
+
+	.gmail-button {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.75rem;
+		background-color: #ea4335;
+		color: white;
+		padding: 1rem 2rem;
+		border-radius: 9999px;
+		font-size: 1.125rem;
+		font-weight: 600;
+		text-decoration: none;
+		transition: all 0.2s ease;
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	}
+
+	.gmail-button:hover {
+		background-color: #dc2626;
+		transform: translateY(-2px);
+		box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	}
+
+	.gmail-icon {
+		width: 24px;
+		height: 24px;
+	}
+
+	@media (max-width: 640px) {
+		.gmail-button {
+			padding: 0.75rem 1.5rem;
+			font-size: 1rem;
+		}
+
+		.gmail-icon {
+			width: 20px;
+			height: 20px;
+		}
+	}
+</style>

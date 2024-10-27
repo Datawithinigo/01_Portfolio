@@ -26,7 +26,29 @@ const { title } = Astro.props;
 	:root {
 		--navy: #000080;
 		--light-red: #FF6B6B;
+		--light-red_hover: #FF4F4F;
 		--white: #FFFFFF;
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent2: #883AEA;
+		/* --accent-light: #E0CCFA;
+		--accent-dark: #310A65; */
+		
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		)
+		--email-standard: {
+    background-color: #10b981;
+    color: white;
+  };
+  
+  --email-standard-hover: {
+    background-color: #059669;
+  };
 	}
 	html {
 		font-family: 'Roboto', sans-serif;

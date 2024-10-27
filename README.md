@@ -48,12 +48,31 @@ https://vercel.com/docs/concepts/deployments/overview
 
 
 
+# comandos 
+### comandos utiles: 
 
-comandos utiles: 
+
 
 pnpm run build
 
 
+solventar problemas deployment: 
+pnpm install
 
+
+rm -rf node_modules pnpm-lock.yaml
+pnpm install
+
+* windows:
+Remove-Item -Recurse -Force node_modules, pnpm-lock.yaml
+pnpm install
+
+
+* Rendering in web 
+pnpm dev
+
+
+To create new project:
+* npm install -g astro
 
 

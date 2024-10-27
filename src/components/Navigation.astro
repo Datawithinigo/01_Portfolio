@@ -1,0 +1,98 @@
+---
+const menuItems = [
+  { title: 'Home', path: '/' },
+  { title: 'About', path: '/about' },
+  { title: 'Projects', path: '/projects' },
+  { title: 'Contact', path: '/contact' }
+];
+---
+
+<nav class="navigation">
+  <div class="dropdown">
+    <button class="dropdown-button">
+      Menu
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m6 9 6 6 6-6"/>
+      </svg>
+    </button>
+    <ul class="dropdown-content">
+      {menuItems.map((item) => (
+        <li>
+          <a href={item.path}>{item.title}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</nav>
+
+<style>
+  .navigation {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 100;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-button {
+    background: var(--light-red);
+    color: var(--white);
+    padding: 0.8rem 1.2rem;
+    border: 1px solid rgba(var(--accent-light), 0.2);
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    backdrop-filter: blur(10px);
+    transition: all 1s ease;
+  }
+
+  .dropdown-button:hover {
+    background: rgba(var(--accent), 0.8);
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    min-width: 160px;
+    background: rgba(var(--accent-dark), 0.95);
+    border: 1px solid rgba(var(--accent-light), 0.2);
+    border-radius: 8px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    backdrop-filter: blur(10px);
+
+    
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+        opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto; /* Enable clicks when visible */
+  }
+
+  .dropdown-content li {
+    list-style: none;
+  }
+
+  .dropdown-content a {
+    color: var(--white);
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+  }
+
+  .dropdown-content a:hover {
+    background: rgba(var(--accent), 0.3);
+  }
+</style>

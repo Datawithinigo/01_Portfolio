@@ -1,10 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
+import Navigation from '../components/Navigation.astro';
+import ContactForm from '../components/ContactForm.astro';
+import '../styles/global.css';
 ---
 
+
+
+
 <Layout title="Iñigo Arriazu - Software Developer">
+
+	<Navigation />
 	<main>
+		
 		<div class="container hero">
 			<div class="content">
 				<h1>Iñigo Arriazu<br><span>Software Developer</span></h1>
@@ -12,9 +20,11 @@ import Layout from '../layouts/Layout.astro';
 				<div class="social-links">
 					<a href="https://www.linkedin.com/in/inigo-arriazu-garcia" aria-label="LinkedIn"><img src="/linkedin-icon.svg" alt="LinkedIn" /></a>
 					<a href="https://www.instagram.com/iarriazu/" aria-label="Instagram"><img src="/instagram-icon.svg" alt="Instagram" /></a>
-					<a href="https://www.youtube.com/@I%C3%B1igoArriazu" aria-label="YouTube"><img src="/youtube-icon.svg" alt="YouTube" /></a>
+					<a href="https://www.youtube.com/@I%C3%B1igoArriazu" aria-label="YouTube"><img src="/youtube-icon.svg" alt="YouTube" /></a>   
 				</div>
-				<button class="cta-button">Get in Touch</button>
+				<a href="/project_2/contact" class="cta-button"> 
+					Get in Touch
+				</a>
 			</div>
 			<div class="image-container" style="border: black;">
 				<img src="/developer_photo.png" alt="Iñigo Arriazu" style="border: white;" />
@@ -31,7 +41,10 @@ import Layout from '../layouts/Layout.astro';
 				<h2>How I Work</h2>
 				<p>My approach is based on close collaboration and personalized attention. Each project is unique, and I make sure to fully understand my clients' needs to offer tailored solutions that exceed their expectations.</p>
 				<p>From conceptualization to implementation, I maintain constant communication, adapting to changes and ensuring high-quality results at every stage of the process.</p>
-				<button class="cta-button">Contact Me</button>
+				
+				<a href="/project_2/contact" class="cta-button"> 
+					Contact Me
+				</a>
 			</div>
 		</div>
 
@@ -111,19 +124,7 @@ import Layout from '../layouts/Layout.astro';
 		width: 24px;
 		height: 24px;
 	}
-	.cta-button {
-		background-color: var(--light-red);
-		color: var(--white);
-		border: none;
-		padding: 0.8rem 1.5rem;
-		font-size: 1rem;
-		font-weight: 700;
-		cursor: pointer;
-		transition: background-color 0.3s ease;
-	}
-	.cta-button:hover {
-		background-color: #FF4F4F;
-	}
+
 	/*  */
 	.image-container {
 		flex: 1;

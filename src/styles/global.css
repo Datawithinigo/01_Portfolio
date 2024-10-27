@@ -1,0 +1,75 @@
+/* Global button styles */
+.contact-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: rgb(var(--accent));
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+}
+  
+.contact-button:hover {
+    background: transparent;
+    border-color: rgb(var(--accent));
+    transform: translateY(-2px);
+}
+
+.cta-button {
+    display: inline-block;    /* Add this line to accept the movement of the button  as a block*/ 
+    background-color: var(--light-red);
+    color: var(--white);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px; /* Step added to round the corners */
+}
+.cta-button:hover {
+    background-color:var(--light-red_hover);
+    transform: translateY(-2px);
+}
+.email-link {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    margin: 0.5rem;
+    background: rgba(var(--accent), 0.2);
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    border: 1px solid rgba(var(--accent-light), 25%);
+}
+.email-link:hover {
+    background: rgba(var(--accent), 0.4);
+    transform: translateY(-2px);
+}
+.cta-button_all {
+    background-color: var(--light-red);
+    color: var(--white);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%; /**To use all space**/
+}
+.cta-button_all:hover {
+    background:  var(--light-red_hover) ;
+    transform: translateY(-2px);
+}
+
+/** Text elements in general **/
+
+.content {
+    padding-right: 0;
+    text-align: center;
+}
+
+
+
