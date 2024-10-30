@@ -48,6 +48,20 @@ https://vercel.com/docs/concepts/deployments/overview
 
 
 
+DIA 3:
+quickfixes 
+
+important videos to understand astro:
+
+* Cómo crear ChatGPT 2.0 GRATIS con HTML, CSS y JavaScript en tu PC https://www.youtube.com/watch?v=HvoiF1MCPGs&ab_channel=midulive
+* web scraping: https://www.youtube.com/shorts/djdyASBz16E
+* curso de Astro 5: https://www.youtube.com/watch?v=WHqZAXHZN_w&ab_channel=midulive
+* Curso Cloudflare DESDE CERO: Evita ataques DDoS, HTTPS, Optimización y más: https://www.youtube.com/watch?v=I2mv4456l74&ab_channel=midulive
+* Creando Landing Page para Infojobs con Astro, Tailwind y TypeScript (desarrollo freelance): https://www.youtube.com/watch?v=3ESpe-TAUfw&ab_channel=midulive
+
+
+
+
 # comandos 
 ### comandos utiles: 
 
@@ -81,3 +95,6 @@ pnpm install
 
 
 
+anadir tailwindcss
+
+pnpm add @tailwindcss/typography

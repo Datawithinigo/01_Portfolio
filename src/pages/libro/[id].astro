@@ -1,0 +1,45 @@
+---
+import { getCollection, render } from "astro:content";
+// import { SHOW_BUY_BUTTON } from "astro:env/server";
+import Layout from "../../layouts/Layout.astro"; 
+// import AmazonLogo from "../../components/AmazonLogo.astro";
+// import my_projectsScore from "../../components/my_projectsScore.astro";
+// import BuyButton from "../../components/BuyButton.astro";
+
+export async function getStaticPaths() {
+  const my_projects = await getCollection("my_projects"); // important refere3ncia 
+
+  return my_projects.map((my_project) => ({
+    params: { id: my_project.slug },
+    props: { my_project }
+  }))
+}
+
+const { my_project } = Astro.props
+const { data, slug } = my_project
+const { title, author, img, readtime, description, buy } = data
+
+const { Content } = await render(my_project)
+
+export const prerender = true
+---
+<Layout title={`${title} - Dev my_projects`}>
+  <aside class="flex flex-col items-center gap-4">
+    <aside>
+      <!-- <a href='/' class="hover:underline opacity-70">← Volver atrás</a> --> 
+       <!-- minuto 54: adaptamos el resto a projecto, incluimmos elementos y publicamos -->
+      <img transition:name={`img-${slug}`} class="rounded w-72 h-auto" src={`/${img}`} alt={title} />
+      <!-- enlace para comprar -->
+    </aside>
+
+    <main>
+      <h1>{title}</h1>
+       <div class="prose"> <!--tailwindcss: -->
+        <Content />
+      </div>
+    </main>
+  </div>
+</Layout>
+
+
+ 

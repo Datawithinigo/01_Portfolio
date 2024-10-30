@@ -1,0 +1,101 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="description" content="Freelance Software Developer Portfolio"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v4.16.7"><title>Database Optimization - Dev my_projects</title><!-- <ViewTransitions /> --><link rel="stylesheet" href="/_astro/index.CCq4MdLV.css">
+<style>@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0;mix-blend-mode:plus-lighter}to{opacity:1;mix-blend-mode:plus-lighter}}@keyframes astroFadeOut{0%{opacity:1;mix-blend-mode:plus-lighter}to{opacity:0;mix-blend-mode:plus-lighter}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}[data-astro-transition-scope]{animation:none!important}}
+</style><style>[data-astro-transition-scope="astro-yzcbpkil-1"] { view-transition-name: img-databases; }@layer astro { ::view-transition-old(img-databases) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(img-databases) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(img-databases) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(img-databases) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-yzcbpkil-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-yzcbpkil-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-yzcbpkil-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-yzcbpkil-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-yzcbpkil-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-yzcbpkil-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-yzcbpkil-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-yzcbpkil-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head><clientRouter></clientRouter> <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">  <aside class="flex flex-col items-center gap-4"> <aside> <!-- <a href='/' class="hover:underline opacity-70">← Volver atrás</a> --> <!-- minuto 54: adaptamos el resto a projecto, incluimmos elementos y publicamos --> <img class="rounded w-72 h-auto" src="/Database_Optimization_Techniques.jpg" alt="Database Optimization" data-astro-transition-scope="astro-yzcbpkil-1"> <!-- enlace para comprar --> </aside> <main> <h1>Database Optimization</h1> <div class="prose"> <!--tailwindcss: --> <h1 id="optimizing-database-models-a-comprehensive-guide">Optimizing Database Models: A Comprehensive Guide</h1>
+<p>Optimizing database models is essential for performance, scalability, and maintainability. Here’s a comprehensive step-by-step guide on techniques to optimize database models and relationships:</p>
+<h2 id="1-requirement-analysis-and-planning">1. Requirement Analysis and Planning</h2>
+<ul>
+<li><strong>Understand Data Requirements</strong>: Gather clear requirements for data storage, querying, and retrieval patterns. Define what entities, attributes, and relationships are necessary.</li>
+<li><strong>Define Constraints</strong>: Establish constraints based on business rules, such as unique values, relationships, data types, and nullability.</li>
+</ul>
+<h2 id="2-normalization">2. Normalization</h2>
+<ul>
+<li><strong>1NF to 3NF (and beyond)</strong>: Start with First Normal Form (1NF) and progress through Second (2NF) and Third Normal Forms (3NF). Higher normalization reduces redundancy and improves integrity.</li>
+<li><strong>Denormalization for Performance</strong>: In cases with high read volumes, selectively denormalize by adding redundant data to reduce joins in complex queries. This often benefits reporting tables but needs careful monitoring to prevent data inconsistency.</li>
+</ul>
+<h2 id="3-efficient-data-types-selection">3. Efficient Data Types Selection</h2>
+<ul>
+<li><strong>Use Appropriate Data Types</strong>: Minimize data type sizes (e.g., INT vs. BIGINT) to save space and improve performance. Avoid large text fields where they’re unnecessary.</li>
+<li><strong>Variable vs. Fixed Length</strong>: Use variable-length data types (VARCHAR) for fields with varying lengths to save storage. Use fixed-length data types when all values are predictable in length.</li>
+</ul>
+<h2 id="4-primary-and-foreign-keys">4. Primary and Foreign Keys</h2>
+<ul>
+<li><strong>Define Primary Keys</strong>: Use primary keys for unique identification of each record, preferring numeric or surrogate keys for faster indexing.</li>
+<li><strong>Optimize Foreign Keys</strong>: Establish foreign keys for integrity but avoid cascading updates/deletes on large datasets unless necessary to avoid lock contention.</li>
+</ul>
+<h2 id="5-indexing-strategies">5. Indexing Strategies</h2>
+<ul>
+<li><strong>Primary Indexes</strong>: Automatically created for primary keys, these are generally clustered and stored physically in a sorted order.</li>
+<li><strong>Secondary Indexes</strong>: Create secondary indexes for frequently queried columns. Use covering indexes where applicable to avoid lookups.</li>
+<li><strong>Composite Indexes</strong>: When multi-column searches are common, create composite indexes, but keep them limited in columns and avoid over-indexing, which impacts insert/update performance.</li>
+<li><strong>Full-Text Indexing</strong>: For text-based searches, use full-text indexes to optimize search speed in text-heavy columns.</li>
+</ul>
+<h2 id="6-partitioning-and-sharding">6. Partitioning and Sharding</h2>
+<ul>
+<li><strong>Partitioning</strong>: Divide large tables based on range, list, or hash partitioning strategies. This can improve query speed and manageability for vast datasets.</li>
+<li><strong>Sharding</strong>: Distribute data across multiple servers (horizontal partitioning) for large-scale applications, enhancing scalability and reducing server load.</li>
+</ul>
+<h2 id="7-caching-strategies">7. Caching Strategies</h2>
+<ul>
+<li><strong>Query Caching</strong>: Cache frequent queries to avoid repeated processing. Use a cache layer or database-supported cache (e.g., Redis, Memcached).</li>
+<li><strong>Materialized Views</strong>: For complex aggregations or joins, use materialized views to store precomputed results and periodically refresh them.</li>
+<li><strong>Application Layer Caching</strong>: Store computed values or preloaded datasets at the application layer when dealing with high-latency data requests.</li>
+</ul>
+<h2 id="8-relationship-optimization">8. Relationship Optimization</h2>
+<ul>
+<li><strong>One-to-Many and Many-to-Many</strong>: For many-to-many relationships, create junction tables with composite primary keys for efficient mapping and retrieval.</li>
+<li><strong>Self-Referencing Relationships</strong>: For hierarchical data (e.g., organizational charts), consider nested sets, adjacency lists, or materialized path models.</li>
+<li><strong>Foreign Key Constraints</strong>: Ensure efficient referential integrity without excessive constraints that may hinder data loading performance.</li>
+</ul>
+<h2 id="9-transactions-and-locking-optimization">9. Transactions and Locking Optimization</h2>
+<ul>
+<li><strong>Reduce Lock Contention</strong>: Design tables and queries to minimize lock contention. Avoid long-running transactions where possible.</li>
+<li><strong>Optimistic vs. Pessimistic Locking</strong>: Use optimistic locking when updates are infrequent, and pessimistic locking only in critical cases to prevent data conflicts.</li>
+</ul>
+<h2 id="10-data-archiving-and-purging">10. Data Archiving and Purging</h2>
+<ul>
+<li><strong>Regular Archiving</strong>: Move historical data into separate storage (cold storage) to reduce the size of operational tables and improve performance.</li>
+<li><strong>Data Purging</strong>: Implement purging strategies for obsolete data to maintain database performance over time.</li>
+</ul>
+<h2 id="11-monitoring-and-tuning">11. Monitoring and Tuning</h2>
+<ul>
+<li><strong>Performance Monitoring</strong>: Regularly analyze query performance and use database logs to identify bottlenecks.</li>
+<li><strong>Query Optimization</strong>: Refine slow queries, optimize joins, and avoid unnecessary subqueries or correlated subqueries.</li>
+<li><strong>Regular Maintenance</strong>: Schedule index rebuilding or defragmenting to maintain optimal performance, especially for frequently updated databases.</li>
+</ul>
+<p>Each step in this guide is essential, and combining them can significantly improve database performance and efficiency. Additionally, ongoing monitoring and tuning are crucial as data volume and usage patterns evolve.</p> </div> </main> </aside> </html>
