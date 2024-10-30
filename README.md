@@ -98,3 +98,8 @@ pnpm install
 anadir tailwindcss
 
 pnpm add @tailwindcss/typography
+
+
+multiples account to make commits in one repository
+- video 01_porfolio
+- Crear whisper 
