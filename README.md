@@ -4,7 +4,8 @@ Este documento se ha creado usando una herramienta de creacion de paginas webs q
 ### Herramienta Utilizada: 
 https://bolt.new/
 
- ### Prompts: 
+
+### Prompts: 
 
 * P1: Crea con ASTRO una página web limpia y profesional para un desarrollador de software freelance. El diseño debe ser minimalista y centrado en el contenido, con colores neutros como blanco, azul marino y detalles en rojo para botones de llamada a la acción. La página debe incluir una foto del desarrollador en el lado derecho, con un fondo claro o blanco, y un título grande a la izquierda que diga: '[Nombre del desarrollador], Software Developer'. Debajo del título, debe haber una breve descripción de sus servicios, como 'Desarrollo de aplicaciones a medida, soporte continuo y consultoría'. Incluir enlaces a sus perfiles de LinkedIn, Instagram y YouTube con iconos pequeños a la izquierda del texto. Un botón rojo claro con la frase 'Get in Touch' debe estar debajo de la descripción para fomentar el contacto. Todo el diseño debe ser moderno y fácil de navegar, con una tipografía elegante y profesional.
 
@@ -62,42 +63,39 @@ important videos to understand astro:
 
 
 
-# comandos 
-### comandos utiles: 
-
-
-
+# COMMANDS
+```bash
+## check before commit & solventar problemas deployment: 
+pnpm install --no-frozen-lockfile 
+pnpm install
 pnpm run build
 
-
-solventar problemas deployment: 
-pnpm install
-
-
+## ubuntu:
 rm -rf node_modules pnpm-lock.yaml
 pnpm install
 
-* windows:
+## windows:
 Remove-Item -Recurse -Force node_modules, pnpm-lock.yaml
 pnpm install
 
 
-* Rendering in web 
+## Rendering in web 
 pnpm dev
 
-
-To create new project:
-* npm install -g astro
-
-
-Before pull to the main : 
-pnpm install
+## To create new project:
+npm install -g astro
 
 
-
-anadir tailwindcss
-
+##  anadir tailwindcss
 pnpm add @tailwindcss/typography
+
+```
+
+ 
+## git config: multiple changes in projects one vercel account
+git config --global user.name "Datawithinigo"
+git config --global user.email "inigo.arriazu@dataoverkill.com"
+git config --list
 
 
 multiples account to make commits in one repository
@@ -105,10 +103,3 @@ multiples account to make commits in one repository
 - Crear whisper  --> poner codigo primero y luego hacer el video 
 - fast wishper : muy lento normal 
 - creacion de extension / pagina web que haga funcion para personas 
-
-
-git config --global user.name "Datawithinigo"
-git config --global user.email "inigo.arriazu@dataoverkill.com"
-
-
-git config --list
