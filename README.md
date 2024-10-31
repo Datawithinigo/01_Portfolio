@@ -105,3 +105,10 @@ multiples account to make commits in one repository
 - Crear whisper  --> poner codigo primero y luego hacer el video 
 - fast wishper : muy lento normal 
 - creacion de extension / pagina web que haga funcion para personas 
+
+
+git config --global user.name "Datawithinigo"
+git config --global user.email "inigo.arriazu@dataoverkill.com"
+
+
+git config --list
