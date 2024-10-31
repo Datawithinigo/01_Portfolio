@@ -47,3 +47,5 @@ buy:
 ---
 
 Having each of these points checked off will ensure you’re ready to present yourself as a knowledgeable, confident, and well-prepared candidate.
+
+https://www.linkedin.com/advice/3/heres-how-you-can-leverage-data-driven-insights-drive-pmxac?trk=contr
