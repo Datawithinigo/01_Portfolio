@@ -103,3 +103,5 @@ pnpm add @tailwindcss/typography
 multiples account to make commits in one repository
 - video 01_porfolio
 - Crear whisper  --> poner codigo primero y luego hacer el video 
+- fast wishper : muy lento normal 
+- creacion de extension / pagina web que haga funcion para personas 
