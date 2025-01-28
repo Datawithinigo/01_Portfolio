@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.2",
+    "@vercel/analytics": "^1.4.1",
     "astro": "^5.1.10",
     "emailjs-com": "^3.2.0",
     "googleapis": "^144.0.0",
